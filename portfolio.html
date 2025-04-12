@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงาน | การจัดกิจกรรมการเรียนรู้</title>
+  <style>
+  /* สไตล์พื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* สไตล์สำหรับ Portfolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.portfolio-item:hover .overlay {
+    transform: translateY(0);
+}
+
+/* สไตล์อื่น ๆ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+  
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="about.html">ประวัติส่วนตัว</a></li>
+                <li><a href="teaching-materials.html">สื่อการสอน</a></li>
+                <li><a href="portfolio.html">ผลงาน</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>ผลงาน</h1>
+        <section class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="pic/1.jpg" alt="โครงการพัฒนาทักษะการคิดวิเคราะห์">
+                <div class="overlay">
+                    <p>โครงการพัฒนาทักษะการคิดวิเคราะห์สำหรับนักเรียนชั้นประถมศึกษาปีที่ 4</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="pic/2.jpg" alt="โครงการอบรมเชิงปฏิบัติการ">
+                <div class="overlay">
+                    <p>โครงการอบรมเชิงปฏิบัติการการใช้สื่อดิจิทัลในห้องเรียน</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="pic/1.jpg" alt="เกมการเรียนรู้ภาษาไทย">
+                <div class="overlay">
+                    <p>เกมการเรียนรู้ภาษาไทยสำหรับนักเรียนชั้นประถมศึกษา</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 การจัดกิจกรรมการเรียนรู้</p>
+    </footer>
+</body>
+</html>
